@@ -26,7 +26,6 @@ public:
     ScalarConverter &operator=(ScalarConverter const &rhs);
 
     static void convert(std::string value);
-    static void print();
 
     static e_type what_type(std::string const &value);
     
