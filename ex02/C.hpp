@@ -6,7 +6,7 @@
 class C : public Base {
 public:
     C();
-    virtual ~C();
+    ~C();
 };
 
 #endif
