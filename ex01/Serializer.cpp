@@ -32,7 +32,6 @@ uintptr_t Serializer::serialize(Data* ptr)
 Data* Serializer::deserialize(uintptr_t raw)
 {
     Data *ptr = reinterpret_cast<Data *>(raw);
-
     std::cout << "Deserialized: " << raw << std::endl;
     return ptr;
 }

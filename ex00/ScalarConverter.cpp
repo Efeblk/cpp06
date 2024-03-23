@@ -57,11 +57,6 @@ void ScalarConverter::convert(std::string value)
     }
 }
 
-void ScalarConverter::print()
-{
-    std::cout << "Print" << std::endl;
-}
-
 e_type ScalarConverter::what_type(std::string const &value) 
 {
     if((value.length() == 1) && (!isdigit(value[0])))
@@ -153,7 +148,6 @@ int ScalarConverter::is_float(std::string value)
         {
             if(value[i] == '.')
                 flag++;
-            
             else
                 return 0;
         }
@@ -181,7 +175,6 @@ int ScalarConverter::is_double(std::string value)
         i++;
     if(!isdigit(value[i]) && i == 0)
         return 0;
-
     while(i < len)
     {
         if(!isdigit(value[i]))

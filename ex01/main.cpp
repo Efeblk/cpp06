@@ -12,4 +12,5 @@ int main()
 
     uintptr_t raw = Serializer::serialize(&d);
     Data *ptr = Serializer::deserialize(raw);
+    (void)ptr;
 }
